@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body,main{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 10vh;
+}
+
+header nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #E5E5E5;
+}
+
+header nav ul{
+    width: 100%;
+    height: 10vh;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+header nav ul li{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5em;
+    list-style: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a{
+    color: #020202;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul li a:hover{
+    color: #A2A2A2;
+}
+
+/* Main */
+
+.container{
+    width: 100%;
+    /* height: 60vh; */
+}
+
+.container .row{
+    width: 100%;
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .row .col-30{
+    width: 20em;
+    height: 22em;
+    background-color: aquamarine;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .row .col-30:nth-child(1){
+    background-image: url('https://www.reporteroindustrial.com/documenta/imagenes/137764/Robots-industriales-mas-alla-de-la-eficiencia-3-gr.jpg');
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.container .row .col-30:nth-child(2){
+    background-image: url('https://www.autycom.com/wp-content/uploads/2020/05/tipos-de-robots-industriales-utilizados-en-empresas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.container .row .col-30:nth-child(3){
+    background-image: url('https://www.automaticaeinstrumentacion.com/multimedia/images/eua1273_34326.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.container .row .col-30 h2{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.container .row .col-30 p{
+    text-align: center;
+    /* margin-bottom: 0px; */
+    color: #fff;
+}
+
+/* Banner 1*/
+.container2{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://maquinasyequipos.com.ar/wp-content/uploads/2018/01/Robots-Industriales.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container2 .row{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+}
+
+.container2 .row .col-60{
+    width: 60%;
+    padding-left: 100px;
+}
+
+.container2 .row .col-60 h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.8em;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 20pxpx;
+}
+
+.container2 .row .col-60 p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.container2 .row .col-60 button{
+    width: 14em;
+    padding: 5px 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.container2 .row .col-60 button:hover{
+    color: aqua;
+    transition: 0.5s ease-in-out;
+}
+
+/* Resolución*/
+
+@media(max-width:1080px){
+    .container2{
+        height: 89vh;
+    }
+    
+    .container2 .row{
+        height: 89vh;
+    }
+}
+
+@media(max-width:768px){
+    .container2{
+        height: 80vh;
+        margin-top: 30px;
+    }
+    
+    .container2 .row{
+        height: 80vh;
+    }
+
+    .container2 .row .col-60{
+        width: 70%;
+    }
+}
+
+@media(max-width: 480px){
+    .container .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container .row .col-30{
+        width: 20em;
+        height: 22em;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+
+    .container2{
+        margin-top: 30px;
+        height: 50vh;
+    }
+    
+    .container2 .row{
+        height: 50vh;
+    }
+
+    .container2 .row .col-60{
+        width: 100%;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container2 .row .col-60 h2{
+        font-size: 2.1em;
+        text-align: center;
+    }
+
+    .container2 .row .col-60 p{
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .container2 .row .col-60 button{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:370px){
+    .container2{
+        height: 40vh;
+    }
+    
+    .container2 .row{
+        height: 40vh;
+    }
+
+    .container2 .row .col-60 button{
+        width: 10em;
+    }
+}
